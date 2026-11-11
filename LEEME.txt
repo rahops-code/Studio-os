@@ -1,0 +1,30 @@
+STUDIO OS — Dashboard de trabajo
+
+CONTENIDO
+- index.html: aplicación completa (React no es necesario; JavaScript vanilla para que sea ligera).
+- manifest.webmanifest y sw.js: instalación PWA y caché offline básica.
+
+PARA PROBAR EN COMPUTADORA
+1. Descomprime el ZIP.
+2. Abre index.html en un navegador moderno. Los datos se guardan en localStorage de ese navegador.
+   Nota: el modo archivo permite probar casi todo, pero no permite instalar la PWA ni usar service worker.
+
+PARA INSTALAR EN CELULAR (recomendado)
+1. Sube el contenido descomprimido a un hosting HTTPS estático, por ejemplo GitHub Pages, Netlify o Vercel.
+2. Abre la URL HTTPS en Chrome (Android) o Safari (iPhone).
+3. Android: menú ⋮ > "Instalar aplicación" o "Agregar a pantalla principal".
+   iPhone: botón Compartir > "Agregar a pantalla de inicio".
+4. Abre Studio OS desde el icono. La app funciona a pantalla completa.
+
+FUNCIONES
+- Crea proyectos, tareas y citas desde "Nuevo" o desde cada sección.
+- En Kanban, cambia el estado de una tarea con el selector de cada tarjeta.
+- En Calendario, toca un día para consultar o agendar.
+- El bloc de notas se guarda automáticamente.
+- Usa Exportar respaldo periódicamente para guardar una copia JSON e Importar para restaurarla.
+- Activa "Avisos" para permitir notificaciones locales del navegador.
+
+PRIVACIDAD Y LIMITACIONES IMPORTANTES
+- Los datos viven en localStorage del navegador/dispositivo; no se envían a un servidor. No se sincronizan automáticamente entre celular y computadora.
+- Las notificaciones implementadas son locales (por ejemplo, cita recién creada y fin del Pomodoro). Las notificaciones push remotas incluso con la app cerrada requieren un backend y un servicio push.
+- Para mantener datos privados, protege el acceso al dispositivo y conserva respaldos exportados.

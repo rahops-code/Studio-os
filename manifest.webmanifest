@@ -1,0 +1,9 @@
+{
+  "name": "Studio OS · Dashboard de trabajo",
+  "short_name": "Studio OS",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#080d18",
+  "theme_color": "#0b1120",
+  "description": "Proyectos, tareas, agenda y enfoque en un solo lugar."
+}
